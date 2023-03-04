@@ -54,6 +54,18 @@ fetch('data.json')
           modal.style.display = 'none';
         });
 
+        window.addEventListener('scroll', function() {
+          var navbar = document.querySelector('.navbar');
+          if (window.scrollY > 0) {
+            navbar.style.width = '100%';
+            navbar.style.marginLeft = '0';
+          } else {
+            navbar.style.width = '95%';
+            navbar.style.marginLeft = '10px';
+          }
+        });
+        
+
         menuContainer.appendChild(menuItem);
       });
     }
