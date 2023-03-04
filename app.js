@@ -10,23 +10,29 @@ fetch('data.json')
       menuContainer.innerHTML = '';
       
       items.forEach(item => {
+
         const menuItem = document.createElement('div');
         menuItem.classList.add('menu-item');
+
+        const menuInfo = document.createElement('div');
+        menuInfo.classList.add('menu-info');
 
         const name = document.createElement('h2');
         name.classList.add('item-name');
         name.innerText = item.name;
-        menuItem.appendChild(name);
+        menuInfo.appendChild(name);
 
         const description = document.createElement('p');
         description.classList.add('item-description');
         description.innerText = item.description;
-        menuItem.appendChild(description);
+        menuInfo.appendChild(description);
 
         const price = document.createElement('span');
         price.classList.add('item-price');
         price.innerText = `${item.price} TL`;
-        menuItem.appendChild(price);
+        menuInfo.appendChild(price);
+
+        menuItem.appendChild(menuInfo);
 
         const image = document.createElement('img');
         image.classList.add('item-image');
