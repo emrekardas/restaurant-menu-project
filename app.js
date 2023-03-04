@@ -32,10 +32,31 @@ fetch('data.json')
         // image.classList.add('item-image');
         // image.src = `${item.image}`;
         // menuItem.appendChild(image);
+        const image = document.createElement('img');
+        image.classList.add('item-image');
+        image.src = `${item.image}`;
+        menuItem.appendChild(image);
+
+        // Add click event listener to display modal with image
+        menuItem.addEventListener('click', () => {
+          const modal = document.getElementById('modal');
+          const modalImage = document.getElementById('modal-image');
+          modalImage.src = image.src;
+          modal.style.display = 'block';
+        });
+
+        // Close modal when "X" is clicked
+        const close = document.getElementsByClassName('close')[0];
+        close.addEventListener('click', () => {
+          const modal = document.getElementById('modal');
+          modal.style.display = 'none';
+        });
 
         menuContainer.appendChild(menuItem);
       });
     }
+
+    
 
     // Display all menu items initially
     displayMenuItems(data);
