@@ -8,7 +8,7 @@ fetch('data.json')
     // Display all menu items
     function displayMenuItems(items) {
       menuContainer.innerHTML = '';
-
+      
       items.forEach(item => {
         const menuItem = document.createElement('div');
         menuItem.classList.add('menu-item');
@@ -28,10 +28,6 @@ fetch('data.json')
         price.innerText = `${item.price} TL`;
         menuItem.appendChild(price);
 
-        // const image = document.createElement('img');
-        // image.classList.add('item-image');
-        // image.src = `${item.image}`;
-        // menuItem.appendChild(image);
         const image = document.createElement('img');
         image.classList.add('item-image');
         image.src = `${item.image}`;
@@ -56,8 +52,6 @@ fetch('data.json')
       });
     }
 
-    
-
     // Display all menu items initially
     displayMenuItems(data);
 
@@ -66,7 +60,7 @@ fetch('data.json')
       button.addEventListener('click', () => {
         const category = button.getAttribute('data-category');
 
-        if (category === 'tumu') {
+        if (category === 'Tümü') {
           displayMenuItems(data);
         } else {
           const filteredItems = data.filter(item => item.category === category);

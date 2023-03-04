@@ -7,9 +7,12 @@
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+
+
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url("https://images.pexels.com/photos/2824173/pexels-photo-2824173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/55/marble-2398956_960_720.jpg");
 }
 
 .main-container {
@@ -20,6 +23,7 @@ body {
 
 .logo {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .markaLogo {
@@ -29,23 +33,17 @@ body {
   margin: 20px;
 }
 
-.navbar {
-  position: sticky;
-  top: 0px;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
-  overflow-y: hidden;
-  align-items: center;
-  width: 100%;
-  height: 90px;
-  flex-direction: row;
+.item-image{
+  display: none;
 }
 
-.navbar::-webkit-scrollbar {
-  display: none;
+.navbar{
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  padding: 20px;
+  margin: 0px 10px;
+  border-radius: 8px;
 }
 
 .filter-btn {
@@ -122,7 +120,7 @@ body {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 600px;
+  max-width: 350px;
   position: relative;
   top: 25%;
   display: flex;
@@ -145,14 +143,144 @@ body {
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
   cursor: pointer;
+}
+  
 }
 
 
 /* Mobil cihazlar için stil ayarları */
 @media screen and (max-width: 767px) {
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("https://images.pexels.com/photos/2824173/pexels-photo-2824173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  }
+
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .markaLogo {
+    max-width: 100%;
+    height: auto;
+    width: 150px;
+    margin: 20px;
+  }
+  
+  .item-image{
+    display: none;
+  }
+  
+  .filter-btn {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: #eaeaea;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 8px;
+  }
+  
+  .filter-btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .filter-btn.active {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  #menu-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .menu-item {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .item-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .item-description {
+    margin-bottom: 10px;
+  }
+  
+  .item-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Modal content */
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+  }
+  
+  /* Close button */
+  .close {
+    color: #aaa;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 24px;
+    padding: 0px 10px;
+    font-weight: bold;
+    background: black;
+    border-radius: 50%;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
   .main-container {
     padding: 0px !important;
   }
@@ -169,6 +297,25 @@ body {
   }
 
   .item-image{
+    display: none;
+  }
+
+  .navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    overflow-y: hidden;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    flex-direction: row;
+  }
+  
+  .navbar::-webkit-scrollbar {
     display: none;
   }
 }
