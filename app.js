@@ -28,6 +28,11 @@ fetch('data.json')
         price.innerText = `${item.price} TL`;
         menuItem.appendChild(price);
 
+        // const image = document.createElement('img');
+        // image.classList.add('item-image');
+        // image.src = `${item.image}`;
+        // menuItem.appendChild(image);
+
         menuContainer.appendChild(menuItem);
       });
     }

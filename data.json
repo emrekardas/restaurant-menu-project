@@ -1,196 +1,218 @@
 [
-      {
-        "id": 1,
-        "category": "Aperatifler",
-        "name": "Çıtır Tavuk Kanat",
-        "description": "Baharatlı, çıtır tavuk kanatları, yanında ranch sos",
-        "price": 18.99
-      },
-      {
-        "id": 2,
-        "category": "Aperatifler",
-        "name": "Patates Kızartması",
-        "description": "Baharatlı, çıtır patates kızartması, yanında ketchup",
-        "price": 12.99
-      },
-      {
-        "id": 3,
-        "category": "Aperatifler",
-        "name": "Nachos",
-        "description": "Mısır cipsi, cheddar peyniri sosu, jalapeno biber",
-        "price": 15.99
-      },
-      {
-        "id": 4,
-        "category": "Ana Yemekler",
-        "name": "Izgara Bonfile",
-        "description": "Dana bonfile, ızgara sebzeler, baharatlı sos",
-        "price": 49.99
-      },
-      {
-        "id": 5,
-        "category": "Ana Yemekler",
-        "name": "Tavuk Şinitzel",
-        "description": "Tavuk göğsü, pane, kızartma, yanında patates püresi",
-        "price": 28.99
-      },
-      {
-        "id": 6,
-        "category": "Ana Yemekler",
-        "name": "Deniz Mahsülleri Risotto",
-        "description": "Karides, kalamar, midye, sarımsaklı risotto",
-        "price": 36.99
-      },
-      {
-        "id": 7,
-        "category": "Sokak Lezzetleri",
-        "name": "Dürüm Kebap",
-        "description": "Tavuk veya kırmızı et, lavaş, domates, soğan, yoğurt sos",
-        "price": 16.99
-      },
-      {
-        "id": 8,
-        "category": "Sokak Lezzetleri",
-        "name": "Lahmacun",
-        "description": "Ince hamur, kıyma, domates, biber, soğan, baharatlar",
-        "price": 12.99
-      },
-      {
-        "id": 9,
-        "category": "Sokak Lezzetleri",
-        "name": "Midye Tava",
-        "description": "Taze midye, hamur, limon, yanında sarımsaklı yoğurt sosu",
-        "price": 20.99
-      },
-      {
-        "id": 10,
-        "category": "Salata",
-        "name": "Mevsim Salatası",
-        "description": "Karışık yeşillikler, domates, salatalık, havuç, zeytin, feta peyniri, zeytinyağı",
-        "price": 14.99
-      },
-      {
-        "id": 11,
-        "category": "Salata",
-        "name": "Cezar Salatası",
-        "description": "Karışık yeşillikler, domates, salatalık, havuç, zeytin, feta peyniri, zeytinyağı",
-        "price": 14.99
-      },
-      {
-        "id": 12,
-        "category": "Salata",
-        "name": "Akdeniz Salatası",
-        "description": "Marul, domates, salatalık, kırmızı soğan, zeytin, feta peyniri, zeytinyağı",
-        "price": 15.99
-      },
-      {
-        "id": 13,
-        "category": "Tatlılar",
-        "name": "Profiterol",
-        "description": "Çikolatalı sos, krem şanti, pasta hamuru",
-        "price": 9.99
-      },
-      {
-        "id": 14,
-        "category": "Tatlılar",
-        "name": "Tiramisu",
-        "description": "Kahveli bisküvi, mascarpone peyniri, kakao tozu",
-        "price": 11.99
-      },
-      {
-        "id": 15,
-        "category": "Tatlılar",
-        "name": "Çikolatalı Brownie",
-        "description": "Kevserli çikolatalı brownie, vanilyalı dondurma",
-        "price": 12.99
-      },
-      {
-        "id": 16,
-        "category": "İçecekler",
-        "name": "Limonata",
-        "description": "Taze sıkılmış limon suyu, soda",
-        "price": 6.99
-      },
-      {
-        "id": 17,
-        "category": "İçecekler",
-        "name": "Portakal Suyu",
-        "description": "Taze sıkılmış portakal suyu",
-        "price": 7.99
-      },
-      {
-        "id": 18,
-        "category": "İçecekler",
-        "name": "Mevsim Kokteyli",
-        "description": "Taze meyveler, soda",
-        "price": 9.99
-      },
-      {
-        "id": 19,
-        "category": "Çaylar",
-        "name": "Demleme Çay",
-        "description": "Rize çayı",
-        "price": 4.99
-      },
-      {
-        "id": 20,
-        "category": "Çaylar",
-        "name": "Adaçayı",
-        "description": "Taze adaçayı yaprakları",
-        "price": 5.99
-      },
-      {
-        "id": 21,
-        "category": "Çaylar",
-        "name": "Naneli Çay",
-        "description": "Taze nane yaprakları, Rize çayı",
-        "price": 5.99
-      },
-      {
-        "id": 22,
-        "category": "Kahveler",
-        "name": "Espresso",
-        "description": "Küçük porsiyon kahve",
-        "price": 7.99
-      },
-      {
-        "id": 23,
-        "category": "Kahveler",
-        "name": "Americano",
-        "description": "Espresso, sıcak su",
-        "price": 8.99
-      },
-      {
-        "id": 24,
-        "category": "Kahveler",
-        "name": "Americano",
-        "description": "Espresso, sıcak su",
-        "price": 8.99
-      },
-      {
-        "id": 25,
-        "category": "Alkollü İçecekler",
-        "name": "Beyaz Şarap",
-        "description": "Lezzetli beyaz şarap",
-        "price": 29.99
-      },
-      {
-        "id": 26,
-        "category": "Alkollü İçecekler",
-        "name": "Kırmızı Şarap",
-        "description": "Lezzetli kırmızı şarap",
-        "price": 29.99
-      },
-      {
-        "id": 27,
-        "category": "Alkollü İçecekler",
-        "name": "Bira",
-        "description": "Soğuk bira",
-        "price": 12.99
-      }
-    ]
-
-  
-  
-       
-  
+  {
+    "id": 1,
+    "category": "Aperatifler",
+    "name": "Çıtır Tavuk Kanat",
+    "description": "Baharatlı, çıtır tavuk kanatları, yanında ranch sos",
+    "price": 18.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 2,
+    "category": "Aperatifler",
+    "name": "Patates Kızartması",
+    "description": "Baharatlı, çıtır patates kızartması, yanında ketchup",
+    "price": 12.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 3,
+    "category": "Aperatifler",
+    "name": "Nachos",
+    "description": "Mısır cipsi, cheddar peyniri sosu, jalapeno biber",
+    "price": 15.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 4,
+    "category": "Ana Yemekler",
+    "name": "Izgara Bonfile",
+    "description": "Dana bonfile, ızgara sebzeler, baharatlı sos",
+    "price": 49.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 5,
+    "category": "Ana Yemekler",
+    "name": "Tavuk Şinitzel",
+    "description": "Tavuk göğsü, pane, kızartma, yanında patates püresi",
+    "price": 28.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 6,
+    "category": "Ana Yemekler",
+    "name": "Deniz Mahsülleri Risotto",
+    "description": "Karides, kalamar, midye, sarımsaklı risotto",
+    "price": 36.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 7,
+    "category": "Sokak Lezzetleri",
+    "name": "Dürüm Kebap",
+    "description": "Tavuk veya kırmızı et, lavaş, domates, soğan, yoğurt sos",
+    "price": 16.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 8,
+    "category": "Sokak Lezzetleri",
+    "name": "Lahmacun",
+    "description": "Ince hamur, kıyma, domates, biber, soğan, baharatlar",
+    "price": 12.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 9,
+    "category": "Sokak Lezzetleri",
+    "name": "Midye Tava",
+    "description": "Taze midye, hamur, limon, yanında sarımsaklı yoğurt sosu",
+    "price": 20.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 10,
+    "category": "Salata",
+    "name": "Mevsim Salatası",
+    "description": "Karışık yeşillikler, domates, salatalık, havuç, zeytin, feta peyniri, zeytinyağı",
+    "price": 14.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 11,
+    "category": "Salata",
+    "name": "Cezar Salatası",
+    "description": "Karışık yeşillikler, domates, salatalık, havuç, zeytin, feta peyniri, zeytinyağı",
+    "price": 14.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 12,
+    "category": "Salata",
+    "name": "Akdeniz Salatası",
+    "description": "Marul, domates, salatalık, kırmızı soğan, zeytin, feta peyniri, zeytinyağı",
+    "price": 15.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 13,
+    "category": "Tatlılar",
+    "name": "Profiterol",
+    "description": "Çikolatalı sos, krem şanti, pasta hamuru",
+    "price": 9.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 14,
+    "category": "Tatlılar",
+    "name": "Tiramisu",
+    "description": "Kahveli bisküvi, mascarpone peyniri, kakao tozu",
+    "price": 11.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 15,
+    "category": "Tatlılar",
+    "name": "Çikolatalı Brownie",
+    "description": "Kevserli çikolatalı brownie, vanilyalı dondurma",
+    "price": 12.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 16,
+    "category": "İçecekler",
+    "name": "Limonata",
+    "description": "Taze sıkılmış limon suyu, soda",
+    "price": 6.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 17,
+    "category": "İçecekler",
+    "name": "Portakal Suyu",
+    "description": "Taze sıkılmış portakal suyu",
+    "price": 7.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 18,
+    "category": "İçecekler",
+    "name": "Mevsim Kokteyli",
+    "description": "Taze meyveler, soda",
+    "price": 9.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 19,
+    "category": "Çaylar",
+    "name": "Demleme Çay",
+    "description": "Rize çayı",
+    "price": 4.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 20,
+    "category": "Çaylar",
+    "name": "Adaçayı",
+    "description": "Taze adaçayı yaprakları",
+    "price": 5.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 21,
+    "category": "Çaylar",
+    "name": "Naneli Çay",
+    "description": "Taze nane yaprakları, Rize çayı",
+    "price": 5.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 22,
+    "category": "Kahveler",
+    "name": "Espresso",
+    "description": "Küçük porsiyon kahve",
+    "price": 7.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 23,
+    "category": "Kahveler",
+    "name": "Americano",
+    "description": "Espresso, sıcak su",
+    "price": 8.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 24,
+    "category": "Kahveler",
+    "name": "Americano",
+    "description": "Espresso, sıcak su",
+    "price": 8.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 25,
+    "category": "Alkollü İçecekler",
+    "name": "Beyaz Şarap",
+    "description": "Lezzetli beyaz şarap",
+    "price": 29.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 26,
+    "category": "Alkollü İçecekler",
+    "name": "Kırmızı Şarap",
+    "description": "Lezzetli kırmızı şarap",
+    "price": 29.99,
+    "image" : "https://picsum.photos/200"
+  },
+  {
+    "id": 27,
+    "category": "Alkollü İçecekler",
+    "name": "Bira",
+    "description": "Soğuk bira",
+    "price": 12.99,
+    "image" : "https://picsum.photos/200"
+  }
+]
