@@ -175,6 +175,12 @@
     /* Logo Section */
     .logo {
         text-align: center;
+        position: sticky;
+        z-index: 3;
+        top: 0;
+        background: grey;
+        background-image: url('https://s3.eu-central-1.amazonaws.com/dijital.menu.assets/photos/5O8l3MmkR9Jsjcxb/hero/menu/c7ccd5d8d24e4a3224b2fe37add69e9d.jpg');
+        backdrop-filter: blur(5px);
     }
 
     .markaLogo {
@@ -187,7 +193,7 @@
     /* Navbar Section */
     .navbar {
         position: sticky;
-        top: 0px;
+        top: 130px;
         z-index: 2;
         display: flex;
         justify-content: space-between;
@@ -195,11 +201,9 @@
         box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
         overflow-y: hidden;
         align-items: center;
-        width: 95%;
+        width: 100%;
         height: 95px;
         flex-direction: row;
-        border-radius: 10px;
-        margin-left: 10px;
     }
 
     .navbar::-webkit-scrollbar {
@@ -237,34 +241,38 @@
     /* Menu Containter */
 
     #menu-container {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
         padding: 20px;
+        grid-template-columns: repeat(2, auto);
+        gap: 15px;
     }
 
     .menu-item {
         display: flex;
-        margin: 10px;
         padding: 20px;
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-        flex: 1 1 300px;
-        gap: 10px;
+        height: 165px;
+        width: 165px;
     }
 
     .menu-info {
         width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
     }
 
     .item-name {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
+        font-size: 14px;
+        font-weight: 700;
     }
 
     .item-description {
-        margin-bottom: 10px;
+        font-size: 12px;
     }
 
     .item-price {
@@ -276,6 +284,7 @@
     .item-image {
         width: 80px;
         height: 80px;
+        display: none;
     }
 
     /* Modal */

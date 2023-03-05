@@ -8,7 +8,7 @@ fetch('data.json')
     // Display all menu items
     function displayMenuItems(items) {
       menuContainer.innerHTML = '';
-      
+
       items.forEach(item => {
 
         const menuItem = document.createElement('div');
@@ -54,18 +54,6 @@ fetch('data.json')
           modal.style.display = 'none';
         });
 
-        window.addEventListener('scroll', function() {
-          var navbar = document.querySelector('.navbar');
-          if (window.scrollY > 0) {
-            navbar.style.width = '100%';
-            navbar.style.marginLeft = '0';
-          } else {
-            navbar.style.width = '95%';
-            navbar.style.marginLeft = '10px';
-          }
-        });
-        
-
         menuContainer.appendChild(menuItem);
       });
     }
@@ -85,6 +73,48 @@ fetch('data.json')
           displayMenuItems(filteredItems);
         }
       });
+
     });
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const logo = document.querySelector('.logo');
+
+    function setLogoBackground(category) {
+      switch (category) {
+        case 'Tümü':
+          logo.style.backgroundImage = 'url(https://s3.eu-central-1.amazonaws.com/dijital.menu.assets/photos/5O8l3MmkR9Jsjcxb/hero/menu/c7ccd5d8d24e4a3224b2fe37add69e9d.jpg)';
+          break;
+        case 'Aperatifler':
+          logo.style.backgroundImage = 'url(https://s3.eu-central-1.amazonaws.com/dijital.menu.assets/photos/5O8l3MmkR9Jsjcxb/covers/8919412078a10a84fdcdd716fd1f0f78.jpg';
+          break;
+        case 'Ana Yemekler':
+          logo.style.backgroundImage = 'url(https://example.com/anayemekler.jpg)';
+          break;
+        case 'Sokak Lezzetleri':
+          logo.style.backgroundImage = 'url(https://example.com/sokaklezzetleri.jpg)';
+          break;
+        case 'Tatlılar':
+          logo.style.backgroundImage = 'url(https://example.com/tatlilar.jpg)';
+          break;
+        case 'İçecekler':
+          logo.style.backgroundImage = 'url(https://example.com/icecekler.jpg)';
+          break;
+        case 'Çaylar':
+          logo.style.backgroundImage = 'url(https://example.com/caylar.jpg)';
+          break;
+        case 'Kahveler':
+          logo.style.backgroundImage = 'url(https://example.com/kahveler.jpg)';
+          break;
+      }
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', function () {
+        const category = this.dataset.category;
+        setLogoBackground(category);
+      });
+    });
+
+
   })
   .catch(error => console.error(error));
