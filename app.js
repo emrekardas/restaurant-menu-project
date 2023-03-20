@@ -4,6 +4,34 @@ fetch('data.json')
   .then(data => {
     const menuContainer = document.getElementById('menu-container');
     const categoryButtons = document.querySelectorAll('button');
+    const modal = document.querySelector('.modal-content')
+
+    // function displayMenuItems(items){
+
+    //   menuContainer.innerHTML = ``
+
+    //   items.forEach(item => {
+
+    //     const emre = `
+    //     <div class="menu-item" category="${item.category}">
+    //       <div class="menu-info">
+    //         <h2 class="item-name">
+    //           ${item.name}
+    //         </h2>
+    //         <p class="item-description">
+    //           ${item.description}
+    //         </p>
+    //         <span class="item-price">
+    //           ${item.price} TL
+    //         </span>
+    //       </div>
+    //       <img class="item-image" src="${item.image}"></img>
+    //     </div>
+        
+    //     `
+    //     menuContainer.insertAdjacentHTML("afterbegin",emre)
+    //   })
+    // };
 
     // Display all menu items
     function displayMenuItems(items) {
