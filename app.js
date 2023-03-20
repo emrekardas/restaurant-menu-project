@@ -110,7 +110,7 @@ fetch('data.json')
     function setLogoBackground(category) {
       switch (category) {
         case 'Tümü':
-          logo.style.backgroundImage = 'url(https://s3.eu-central-1.amazonaws.com/dijital.menu.assets/photos/5O8l3MmkR9Jsjcxb/hero/menu/c7ccd5d8d24e4a3224b2fe37add69e9d.jpg)';
+          logo.style.backgroundImage = 'url(https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=390&h=131&dpr=2)';
           break;
         case 'Aperatifler':
           logo.style.backgroundImage = 'url(https://s3.eu-central-1.amazonaws.com/dijital.menu.assets/photos/5O8l3MmkR9Jsjcxb/covers/8919412078a10a84fdcdd716fd1f0f78.jpg';

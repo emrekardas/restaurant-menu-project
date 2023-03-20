@@ -48,7 +48,8 @@
         font-weight: bold;
         padding: 10px 20px;
         border: none;
-        background-color: #ffd300;
+        background: rgb(0,146,70);
+        background: linear-gradient(90deg, rgba(0,146,70,1) 0%, rgba(255,255,255,1) 50%, rgba(206,43,55,1) 100%);
         color: #333;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -58,12 +59,8 @@
     }
 
     .filter-btn:hover {
-        background-color: #060606;
-        color: #fff;
-    }
-
-    .filter-btn.active {
-        background-color: #060606;
+        background: rgb(0,146,70);
+        background: linear-gradient(-90deg, rgba(0,146,70,1) 0%, rgba(255,255,255,1) 50%, rgba(206,43,55,1) 100%);
         color: #fff;
     }
 
@@ -179,8 +176,10 @@
         z-index: 3;
         top: 0;
         background: grey;
-        background-image: url('https://s3.eu-central-1.amazonaws.com/dijital.menu.assets/photos/5O8l3MmkR9Jsjcxb/hero/menu/c7ccd5d8d24e4a3224b2fe37add69e9d.jpg');
+        background-image: url('https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=390&h=131&dpr=2');
         backdrop-filter: blur(5px);
+        background-repeat: no-repeat;
+        background-size: 100% 250px;
     }
 
     .markaLogo {
@@ -215,7 +214,8 @@
         font-weight: bold;
         padding: 10px 20px;
         border: none;
-        background-color: #ffd300;
+        background: rgb(0,146,70);
+        background: linear-gradient(90deg, rgba(0,146,70,1) 0%, rgba(255,255,255,1) 50%, rgba(206,43,55,1) 100%);
         color: #333;
         cursor: pointer;
         transition: all 0.3s ease;
@@ -229,22 +229,18 @@
     }
 
     .filter-btn:hover {
-        background-color: #060606;
-        color: #fff;
-    }
-
-    .filter-btn.active {
-        background-color: #060606;
+        background: rgb(0,146,70);
+        background: linear-gradient(-90deg, rgba(0,146,70,1) 0%, rgba(255,255,255,1) 50%, rgba(206,43,55,1) 100%);
         color: #fff;
     }
 
     /* Menu Containter */
 
     #menu-container {
-        display: grid;
+        display: flex;
         padding: 20px;
-        grid-template-columns: repeat(2, auto);
         gap: 15px;
+        flex-direction: column;
     }
 
     .menu-item {
@@ -253,8 +249,8 @@
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 0 10px rgb(0 0 0 / 20%);
-        height: 165px;
-        width: 165px;
+        height: 100%;
+        width: 100%;
     }
 
     .menu-info {
